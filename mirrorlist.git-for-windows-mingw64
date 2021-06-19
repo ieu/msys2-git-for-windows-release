@@ -1,0 +1,6 @@
+##
+## 64-bit Git for Windows ( Mingw-w64 ) repository mirrorlist
+##
+
+## Primary
+Server = https://wingit.blob.core.windows.net/x86-64

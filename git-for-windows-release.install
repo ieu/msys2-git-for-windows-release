@@ -1,0 +1,15 @@
+post_install() {
+	sed -i -e '/^\[mingw32\]$/{
+		i [git-for-windows-mingw32]
+		i Include = /etc/pacman.d/mirrorlist.git-for-windows-mingw32
+		i
+	}' -e '/^\[mingw64\]$/{
+		i [git-for-windows-mingw64]
+		i Include = /etc/pacman.d/mirrorlist.git-for-windows-mingw64
+		i
+	}' /etc/pacman.conf
+}
+
+post_remove() {
+	sed -i '/\[git-for-windows-mingw\(32\|64\)\]/,/^$/d' /etc/pacman.conf
+}
