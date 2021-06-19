@@ -20,8 +20,6 @@ It's useful for those who work on both [MSYS2](https://www.msys2.org/) and [Git 
 pacman -Syyuu
 ```
 
-An error saying 
-
 This will replace your `msys2-runtime` with patched one which requires terminating all MSYS2 processes and start a new MSYS2 terminal.
 
 3. Upgrade rest as needed
